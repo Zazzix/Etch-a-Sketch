@@ -12,9 +12,9 @@ body {
 }
 
 .canvas {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(16, auto);
+    grid-template-rows: repeat(16, auto);
     border: 1px red solid;
     width: 600px;
     height: 600px;
@@ -28,6 +28,10 @@ body {
 .square {
     flex: 1 1;
     border: 1px goldenrod solid;
+}
+
+.black-square {
+    background-color: black;
 }
 
 .size {
